@@ -1,3 +1,3 @@
-private repos needs username
-ckfinder example
-# ckExample
+
+* 上传大附件问题
+ckfinder 2.3 上传大附件（超过2g）,由于在 FileUploadCommand 的 saveTemporaryFile 321 行，会把文件读取到内存中，所以不支持大附件。注释掉这句即可解决（会有什么影响暂未深入，目前未发现负作用）
