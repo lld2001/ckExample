@@ -318,7 +318,7 @@ public class FileUploadCommand extends Command implements IPostCommand {
 		AfterFileUploadEventArgs args = new AfterFileUploadEventArgs();
 		args.setCurrentFolder(this.currentFolder);
 		args.setFile(file);
-		args.setFileContent(item.get());
+		//args.setFileContent(item.get());
 		if (!ImageUtils.isImage(file)) {
 			item.write(file);
 			if (configuration.getEvents() != null) {
